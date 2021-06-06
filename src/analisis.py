@@ -96,5 +96,3 @@ def fullAnalisisDocx(file):
     cant = badwords & palabras
 
     return len(cant), len(palabras)
-
-

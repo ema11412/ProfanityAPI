@@ -7,15 +7,15 @@ app = Flask(__name__)
 
 @app.route('/', methods=['GET'])
 def ping():
+    print("HOLA")
     return jsonify({"response": "Active"})
 
 
 
 #GET method:
-# Get the orders by users id
 @app.route('/analyze/<string:name>', methods=['GET'])
 def analyze(name):
-    print(name)
+    #print(name)
     try:
         nombre = str(name)
         run_storage(nombre)
@@ -33,6 +33,7 @@ def analyze(name):
 
     except Exception as e:
         print(e)
+    return "0"
 
 
 if __name__ == "__main__":
