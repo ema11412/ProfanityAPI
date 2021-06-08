@@ -4,9 +4,11 @@ WORKDIR /api
 
 COPY . /api/
 
-RUN pip install -r requirements.txt
+RUN pip install --user -U nltk
 
-CMD ["python", "./src/main.py"]
+RUN pip install -r requirements.txt --user
+
+CMD ["python3", "./src/main.py"]
 
 
 

@@ -106,5 +106,5 @@ def run_storage(name, mode = 1):
 
 
 # Main method.
-if __name__ == '__main__':
-    run_storage("sample.pdf")
+# if __name__ == '__main__':
+#     run_storage("sample.pdf")

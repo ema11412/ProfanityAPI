@@ -28,12 +28,12 @@ def analyze(name):
             b_w, t_w = fullAnalisisTxt(nombre)
           
         p_total = b_w/t_w*100
-        run_storage(nombre,0)
+        run_storage(nombre)
         return str(p_total)        
 
     except Exception as e:
         print(e)
-    return "0"
+        return(str(e))
 
 
 if __name__ == "__main__":

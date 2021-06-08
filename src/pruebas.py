@@ -89,5 +89,3 @@ def run_sample():
 
 
 # Main method.
-if __name__ == '__main__':
-    run_sample()
