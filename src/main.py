@@ -1,7 +1,7 @@
 from analisis import *
 from storage import *
 from flask import Flask, jsonify, request
-
+from dbconnect import updateDB
 
 app = Flask(__name__)
 
@@ -28,7 +28,8 @@ def analyze(name):
             b_w, t_w = fullAnalisisTxt(nombre)
           
         p_total = b_w/t_w*100
-        run_storage(nombre)
+        run_storage(nombre,0)
+        updateDB(name, p_total)
         return str(p_total)        
 
     except Exception as e:
