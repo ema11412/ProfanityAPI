@@ -1,7 +1,7 @@
 from analisis import *
 from storage import *
 from flask import Flask, jsonify, request
-from dbconnect import updateDB
+from dbconnect import updateDB, createSamples
 
 app = Flask(__name__)
 
@@ -10,7 +10,10 @@ def ping():
     print("HOLA")
     return jsonify({"response": "Active"})
 
-
+#GET method:
+@app.route('/samples', methods=['GET'])
+def samples():
+    createSamples()
 
 #GET method:
 @app.route('/analyze/<string:name>', methods=['GET'])
