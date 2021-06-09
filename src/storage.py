@@ -58,9 +58,9 @@ def run_storage(name, mode = 1):
             container_name, public_access=PublicAccess.Container)
 
         # Create Sample folder if it not exists, and create a file in folder Sample to test the upload and download.
-        local_path = os.path.expanduser("../public/docs")
+        local_path = os.path.expanduser("/api/public/docs")
         if not os.path.exists(local_path):
-            os.makedirs(os.path.expanduser("../public/docs"))
+            os.makedirs(os.path.expanduser("/api/public/docs"))
             #local_file_name = "QuickStart_" + str(uuid.uuid4()) + ".txt"
             #full_path_to_file = os.path.join(local_path, local_file_name)
             #full_path_to_file = "../public/docs/sample.pdf"

@@ -30,7 +30,7 @@ def detect_language(text):
 def load_bad_words(language):
     data = []
     if language.upper() in ['ENGLISH','FRENCH','SPANISH','GERMAN']:
-        f= open("../public/datasets/"+language.lower()+'.csv')
+        f= open("/api/public/datasets/"+language.lower()+'.csv')
         reader = csv.reader(f)
         for row in reader:
             data += [row[0].lower()]

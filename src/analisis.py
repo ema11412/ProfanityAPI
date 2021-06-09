@@ -8,7 +8,7 @@ import os
 
 def fullAnalisisTxt(file):
 
-    filename = "../public/docs/"+ file
+    filename = "/api/public/docs/"+ file
 
     palabras = []
 
@@ -30,7 +30,7 @@ def fullAnalisisTxt(file):
 
 def fullAnalisisPdf(file):
 
-    filename = "../public/docs/"+ file
+    filename = "/api/public/docs/"+ file
 
     palabras = getTextPdf(filename).split(" ")
 
@@ -46,7 +46,7 @@ def fullAnalisisPdf(file):
 
 def fullAnalisisDocx(file):
 
-    filename = "../public/docs/"+ file
+    filename = "/api/public/docs/"+ file
 
     palabras = getTextDOCX(filename).split(" ")
 
