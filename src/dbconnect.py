@@ -11,7 +11,7 @@ collection = db['documents']
 
 
 def updateDB(name, val):
-    result = collection.update_one({"fileID": name}, {"$set": {"offensive": val}})
+    collection.update_one({"fileID": name}, {"$set": {"offensive": val}})
 
 
 def createSamples():

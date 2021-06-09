@@ -32,6 +32,8 @@ def analyze(name):
           
         p_total = b_w/t_w*100
         run_storage(nombre,0)
+        
+        
         updateDB(name, p_total)
         return str(p_total)        
 
