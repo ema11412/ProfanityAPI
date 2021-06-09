@@ -34,7 +34,7 @@ def analyze(name):
         run_storage(nombre,0)
         
         
-        updateDB(name, p_total)
+        #updateDB(name, p_total)
         return str(p_total)        
 
     except Exception as e:
