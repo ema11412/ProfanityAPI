@@ -6,7 +6,7 @@ COPY . /api/
 
 RUN pip install -r requirements.txt --user
 
-CMD ["python3", "./src/main.py"]
+CMD ["python3","-u","./src/main.py"]
 
 
 

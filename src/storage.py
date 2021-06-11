@@ -102,6 +102,7 @@ def run_storage(name, mode = 1):
             os.remove(full_path_to_file2)
     
     except Exception as e:
+        
         print(e)
 
 
