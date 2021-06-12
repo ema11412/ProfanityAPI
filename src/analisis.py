@@ -17,7 +17,7 @@ def fullAnalisisTxt(file):
             palabras.extend(lineas.split())
 
 
-    badwords = load_bad_words("SPANISH")
+    badwords = load_bad_words("ENGLISH")
 
     badwords = set(badwords)
     palabras = set(palabras)
@@ -34,7 +34,7 @@ def fullAnalisisPdf(file):
 
     palabras = getTextPdf(filename).split(" ")
 
-    badwords = load_bad_words("SPANISH")
+    badwords = load_bad_words("ENGLISH")
 
     badwords = set(badwords)
     palabras = set(palabras)
@@ -50,7 +50,7 @@ def fullAnalisisDocx(file):
 
     palabras = getTextDOCX(filename).split(" ")
 
-    badwords = load_bad_words("SPANISH")
+    badwords = load_bad_words("ENGLISH")
 
     badwords = set(badwords)
     palabras = set(palabras)
